@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.impute import SimpleImputer
 
 # Load dataset
-data = pd.read_csv('../../YAKUBU_22CG031971_PTS/data/titanic.csv')
+data = pd.read_csv('data/titanic.csv')
 print(data['Survived'].value_counts())
 
 # Select features and target
@@ -35,3 +35,4 @@ with open('../model/titanic_model.pkl', 'wb') as f:
     pickle.dump(model, f)
 
 print("Model trained and saved successfully.")
+
